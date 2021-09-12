@@ -1,0 +1,34 @@
+---- Table Device ----
++ Id
+- UCID (unique)
+- creation date
+- status (true/false)
+- activation (true/false)
+
+----- Table Data -----
++ id Data
+* id Device
+- gaz
+- water_lvl
+- water_temp
+- water_press
+- speed
+- oil_lvl
+- oil_temp
+- oil_press
+- timestamp
+
+
+
+------ Table data type ---------
++ id
+- name
+- type ( analog / digital)
+- status (true / false)
+
+----- Table data ------------
+
++ id Device
++ id DataType
+- value
+- timestamp
