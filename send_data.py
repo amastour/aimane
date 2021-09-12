@@ -23,6 +23,17 @@ while True:
         "oil_temp": oil_temp,
         "oil_press": oil_press
     })
+    requests.post("http://192.168.186.107:5000/api/v1/info/",json={
+        "device": UCID,
+        "gaz": gaz,
+        "water_lvl": water_lvl,
+        "water_temp": water_temp,
+        "water_press": water_press,
+        "speed": speed,
+        "oil_lvl": oil_lvl,
+        "oil_temp": oil_temp,
+        "oil_press": oil_press
+    })
     time.sleep(1)
 
 

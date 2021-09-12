@@ -15,6 +15,7 @@ class Device(db.Model):
     creation_date = db.Column(db.DateTime, nullable = False)
 
     datas = relationship("Data", back_populates="device")
+    infos = relationship("Info", back_populates="device")
 
 
     device_resource_model= auth_api.model('device', {

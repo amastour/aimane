@@ -1,9 +1,8 @@
 from ..models.device import Device as DeviceModel
 from ..models.data import Data as DataModel
 from app import db
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import desc
-
 
 def create_data(data):
     device_id = data['device']
